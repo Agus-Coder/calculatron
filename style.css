@@ -13,8 +13,8 @@ body{
     padding: 10px;
     box-sizing: border-box;
     border: solid white 1px;  
-    height: 500px;
-    width: 500px;
+    height: 566px;
+    width: 350px;
     border-radius: 25px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
