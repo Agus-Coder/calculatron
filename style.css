@@ -1,19 +1,19 @@
 body{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background-color:rgb(100, 100, 100);
+    background-color:rgb(243, 147, 22);
 }
 
 .container{
     padding: 10px;
     box-sizing: border-box;
     border: solid white 1px;  
-    height: 566px;
+    height: 450px;
     width: 350px;
     border-radius: 25px;
     display: grid;
@@ -21,8 +21,14 @@ body{
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
     background-color: black;
-
+    position: sticky;
+    top: 200px;
+    left: 50vw;
+    justify-self: center;
 }
+
+/* Si usas em como unidades de medida (alto o ancho) recordá que son relativas al tamaño de la fuente que tiene el padre de ese elemento. siempre se ajustan entonces
+al tamaño de fuente utilizado. rem se utiliza con el tamaño de fuente relativo al elemento raiz */
 
 .screen{
     box-sizing: border-box;
@@ -46,15 +52,19 @@ body{
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 25px;
-    background-color: rgb(100, 142, 219) ;
+    background-color: rgb(100, 142, 219);
 }
 
 .button:hover{
     background-color: #D65A3E;
     color: white;
+
 }
 
 .button:active{
     background-color: #25993D;
+    position: relative;
+    right: 5px;
+    top: 5px;
 }
 
